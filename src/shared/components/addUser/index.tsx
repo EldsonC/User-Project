@@ -1,5 +1,6 @@
 import './index.css'
 
+import { Link } from 'react-router-dom'
 import api from '../../../services/api'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -12,18 +13,16 @@ const validationFormUser = yup.object().shape({
 })
 
 export default function Modal() {
-    const modal = document.getElementById('conatiner-modal') as HTMLElement
-    
     const { register, handleSubmit } = useForm({
         resolver: yupResolver(validationFormUser)
     })
 
     const addUser = (data: any) => api.post('users', data)
         .then(() => {
-            modal.style.display = 'none'
+            
         })
         .catch(() => {
-            console.log('Error to add user!')
+            
         })
 
     return (
