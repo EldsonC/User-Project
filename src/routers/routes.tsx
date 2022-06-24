@@ -5,7 +5,7 @@ import Dashboard from '../pages/dashboard'
 export default function Routers() {
     return (
         <Routes>
-            <Route path='/dashboard' element={<Dashboard/>} />
+            <Route path='/' element={<Dashboard/>} />
         </Routes>
     )
 }
