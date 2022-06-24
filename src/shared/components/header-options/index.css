@@ -52,6 +52,18 @@
 }
 
 @media (max-width: 800px) {
+    .btn-option {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-options {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 355px) {
     .header-options {
         display: none;
     }

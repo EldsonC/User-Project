@@ -9,7 +9,7 @@ export default function Dashboard() {
     return (
             
         <div className="container">
-            <SideBar />
+            {/* <SideBar /> */}
             <div className="dash">
                 <Header/>
                 <HeaderOptions/>
