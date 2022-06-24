@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.dash {
+    width: calc(100% - 61px);
+    flex: 1;
+}
